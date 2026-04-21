@@ -81,6 +81,7 @@ function(add_toy toy)
 endfunction()
 
 add_cart(viewer "${MULTIVOX_INSTALL_DIR}/models/*.obj ${MULTIVOX_INSTALL_DIR}/images/*.png")
+add_cart(billboard "${MULTIVOX_INSTALL_DIR}/images/*.png")
 
 add_toy(viewer)
 add_toy(zander)
@@ -88,6 +89,8 @@ add_toy(eighty)
 add_toy(tesseract)
 add_toy(flight)
 add_toy(fireworks)
+add_toy(billboard)
+add_toy(shooter)
 
 
 install(DIRECTORY ${CMAKE_SOURCE_DIR}/models/ DESTINATION ${MULTIVOX_INSTALL_DIR}/models)
